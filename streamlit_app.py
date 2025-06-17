@@ -232,7 +232,7 @@ def predict_rule(material, attributes):
         else:
             return "재활용 가능", "색상·디자인에 관계없이 재활용 가능합니다"
 
-    if material == 'aluminium_can':
+    if material == 'aluminum_can':
         if 'has_plastic_cap' in attributes:
             reasons.append("플라스틱 뚜껑은 제거 후 배출해야 합니다")
         if 'has_plastic_label' in attributes:
